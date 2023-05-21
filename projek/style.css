@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: linear-gradient(#2b2b2b, #1c1c1c);
+}
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;700&family=Poppins:ital,wght@0,600;1,500&display=swap");
+.container {
+  background-color: #f7f7f7;
+}
+
+/* Navbar */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  background-color: #8d2310;
+  height: 70px;
+  line-height: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #cfab7a;
+  padding-left: 45px;
+}
+
+nav ul li a:hover {
+  color: #ffb348;
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+}
+
+/*Search  */
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  top: 150px;
+  left: 32%;
+  max-width: 500px;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #c5c5ca;
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: rgba(234, 76, 137, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.content .box {
+  padding: 0 17px 150px 17px;
+  box-sizing: border-box;
+  position: relative;
+  color: #fdfd;
+}
+
+.content .box p {
+  margin-top: 15px;
+  cursor: pointer;
+  position: absolute;
+  left: 120px;
+}
+
+.content .box.lima p {
+  left: 65px;
+}
+
+.content .box.satu p,
+.box.dua p,
+.box.empat p {
+  left: 100px;
+}
+
+.content .box.tiga p {
+  left: 82px;
+}
+
+.content .box p:hover {
+  color: #2774b8;
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+}
+
+/* Footer */
+footer {
+  height: 50px;
+  background-color: #817c7c;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  text-align: center;
+  line-height: 50px;
+  border-top: 3px solid rgba(145, 134, 134, 0.4);
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .group {
+    max-width: 200px;
+  }
+
+  nav {
+    font-size: 13px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}
